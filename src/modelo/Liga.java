@@ -1,15 +1,16 @@
+package modelo;
 import java.util.ArrayList;
 
 public class Liga {
     private String nombre;
-    private static int SIG_COD_LIGA=0;
+    private static int sigCodLiga=0;
     private final int COD_LIGA;
     private ArrayList<Equipo> equipos;
 
     public Liga(String nombre){
         this.nombre = nombre;
-        COD_LIGA = SIG_COD_LIGA;
-        SIG_COD_LIGA++;
+        COD_LIGA = sigCodLiga;
+        sigCodLiga++;
         equipos = new ArrayList<Equipo>();
     }
 
@@ -21,8 +22,8 @@ public class Liga {
         this.nombre = nombre;
     }
 
-    public static int getSIG_COD_LIGA() {
-        return SIG_COD_LIGA;
+    public static int getSigCodLiga() {
+        return sigCodLiga;
     }
 
     public int getCOD_LIGA() {

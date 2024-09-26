@@ -1,3 +1,4 @@
+package modelo;
 public class Entrenador extends Persona {
 
     private int tactica;
